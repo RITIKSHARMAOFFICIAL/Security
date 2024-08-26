@@ -1,4 +1,3 @@
-```markdown
 # 🛡️ Phishing Website Detection System using Machine Learning and MLOps
 
 This project involves developing a machine learning system to predict whether a website is phishing or not. The system is designed to enhance cybersecurity by identifying and blocking malicious websites. The project integrates machine learning techniques with MLOps tools to create a scalable, automated, and efficient solution.
@@ -80,4 +79,3 @@ If you'd like to contribute to this project, please fork the repository and use 
 ## 📧 Contact
 
 For any questions or feedback, please reach out to [Ritik Sharma](mailto:ritik0712sharma@gmail.com).
-```

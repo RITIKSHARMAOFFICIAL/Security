@@ -1,7 +1,7 @@
 
-from pymongo.mongo_client import MongoClient
+'''from pymongo.mongo_client import MongoClient
 
-uri = "mongodb+srv://ritik0712sharma:RSYKeKFCEUfhoQKN@cluster0.hia4g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "mongodb+srv://snshrivas:Snshrivas@cluster0.u141hkk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # Create a new client and connect to the server
 client = MongoClient(uri)
@@ -11,4 +11,19 @@ try:
     client.admin.command('ping')
     print("Pinged your deployment. You successfully connected to MongoDB!")
 except Exception as e:
-    print(e)
+    print(e)'''
+    
+    
+import mlflow
+
+x,y=75,10
+z=x+y
+#tracking the experiment with the mlflow
+
+with mlflow.start_run():
+    mlflow.log_param("x",x)
+    mlflow.log_param("y",y)
+    mlflow.log_metric("z",z)
+
+print(z)
+print("Ritik")

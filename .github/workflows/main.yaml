@@ -94,7 +94,11 @@ jobs:
 
       - name: Stop and remove network container if running
         run: |
-         docker ps -q --filter "name=networksecurity7" | grep -q . && docker stop networksecurity7 && docker rm -fv networksecurity7
+          CONTAINER_ID=$(docker ps -q --filter "name=networksecurity7")
+          if [ -n "$CONTAINER_ID" ]; then
+            docker stop networksecurity7
+            docker rm -fv networksecurity7
+          fi
        
       - name: Run Docker Image to serve users
         run: |

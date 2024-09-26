@@ -5,7 +5,7 @@ This project involves developing a machine learning system to predict whether a 
 ## 🚀 Project Overview
 
 - **🎯 Objective:** Predict phishing websites using machine learning to improve cybersecurity.
-- **🛠️ Key Technologies:** Python, Kubernetes, Kubeflow, Docker, AWS, MongoDB, FastAPI, GitHub Actions, MLflow, Airflow, Terraform.
+- **🛠️ Key Technologies:** Python, Docker, AWS, MongoDB, FastAPI, GitHub Actions, MLflow, Airflow, Terraform.
 
 ## 🌟 Features
 

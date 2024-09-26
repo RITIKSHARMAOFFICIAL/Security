@@ -11,7 +11,7 @@ This project involves developing a machine learning system to predict whether a 
 
 - **🔍 Machine Learning Model:** A model trained to detect phishing websites based on various indicators.
 - **🔄 MLOps Pipeline:** Automated deployment pipeline using GitHub Actions, MLflow, Airflow, and Terraform.
-- **⚙️ Scalable Deployment:** The system is deployed on AWS using Docker, Kubeflow, and MongoDB, ensuring scalability and efficient management.
+- **⚙️ Scalable Deployment:** The system is deployed on AWS using Docker, and MongoDB, ensuring scalability and efficient management.
 - **🌐 API Integration:** FastAPI is used to build and deploy APIs for interacting with the model.
 - **💾 Database Integration:** MongoDB is used for storing and managing website data during model training and deployment.
 
@@ -20,7 +20,6 @@ This project involves developing a machine learning system to predict whether a 
 ### Prerequisites
 - 🐍 Python 3.8+
 - 🐳 Docker
-- ☸️ Kubernetes with Kubeflow installed
 - ☁️ AWS account with necessary permissions
 - 🍃 MongoDB
 
@@ -54,14 +53,10 @@ pip install -r requirements.txt
     terraform init
     terraform apply
     ```
-4. **☸️ Launch Kubeflow Pipeline:**
-    - Use the Kubeflow dashboard to create and run the ML pipeline.
-
 ## 🧑‍💻 Usage
 
 1. **📊 Training the Model:**
     - Prepare your dataset and upload it to the specified MongoDB collection.
-    - Run the training script using the Kubeflow pipeline.
   
 2. **🔍 Prediction:**
     - After deployment, the system will automatically predict whether new websites are phishing and store the results in MongoDB.
@@ -70,7 +65,6 @@ pip install -r requirements.txt
 ## 📈 Results and Evaluation
 
 - The model's performance metrics, such as accuracy, precision, and recall, are tracked using MLflow.
-- The results are visualized and monitored through the Kubeflow dashboard.
 
 ## 🤝 Contributing
 
